@@ -130,13 +130,28 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
+html {
   background: lightgray;
+}
+@media (max-width: 500px) {
+  html {
+    background: red;
+  }
+}
+.greenText {
+  color: forestgreen;
+}
+.blueText {
+  color: skyblue;
 }
 .contaier {
   width: 900px;
   margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Lobster', cursive;
 }
 header {
   position: relative;
@@ -154,6 +169,7 @@ header h1 {
 }
 header p {
   font-size: 50px;
+  color: skyblue;
 }
 .main-content {
   display: flex;
@@ -187,11 +203,11 @@ header p {
 .main-content footer {
   position: absolute;
   top: 82%;
-  left: 95%;
+  left: 85%;
 }
 .main-content footer a {
   display: flex;
   flex-direction: column;
-  color: salmon;
+  color: skyblue;
   padding: 5px;
 }

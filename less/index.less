@@ -53,15 +53,37 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html,{
 	background: lightgray;
+
+	@media (max-width: 500px) {
+		background: red;
+	}
 }
+
+@header-font: 'Lobster', cursive;
+
+@greenColor:forestgreen;
+
+.greenText{
+	color:@greenColor;
+}
+
+@blueColor:skyblue;
+
+.blueText{
+	color:@blueColor;
+}
+
 
 .contaier{
 	width:900px;
 	margin:0 auto;
 }
 
+h1, h2, h3{
+	font-family: @header-font;
+}
 header{			//<-----------opens header--------------->
 	position:relative;
 	text-align: center;
@@ -78,6 +100,7 @@ header{			//<-----------opens header--------------->
 	}
 	p{
 		font-size:50px;
+		.blueText();
 	}
 }			//<----------------closes header----------------------->
 
@@ -102,26 +125,26 @@ header{			//<-----------opens header--------------->
 	}
 	h2{
 		font-size:30px;
-		color:forestgreen;
+		.greenText();
 		padding:10px 0;
 		text-decoration: underline;
 	}
 
 	h3{
 		font-size: 20px;
-		color:skyblue;
+		.blueText();
 		padding: 10px 0;
 	}
 	
 	footer{
 		position: absolute;
 		top:82%;
-		left:95%;
+		left:85%;
 
 		a{
 			display: flex;
 			flex-direction: column;
-			color:salmon;
+			.blueText();
 			padding:5px;
 
 		}
