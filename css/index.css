@@ -131,12 +131,7 @@ table {
   box-sizing: border-box;
 }
 html {
-  background: lightgray;
-}
-@media (max-width: 500px) {
-  html {
-    background: red;
-  }
+  background: blue;
 }
 .greenText {
   color: forestgreen;
@@ -164,16 +159,20 @@ header .header-top {
   transform: translate(-50%, -50%);
   color: white;
 }
-header h1 {
+@media (max-width: 800px) {
+  header .header-top {
+    color: purple;
+  }
+}
+header .header-top h1 {
   font-size: 100px;
 }
-header p {
+header .header-top p {
   font-size: 50px;
   color: skyblue;
 }
 .main-content {
   display: flex;
-  flex-direction: row;
   position: relative;
   text-align: center;
 }

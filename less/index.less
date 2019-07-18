@@ -53,12 +53,8 @@ table {
     box-sizing: border-box;
 }
 
-html,{
-	background: lightgray;
-
-	@media (max-width: 500px) {
-		background: red;
-	}
+html{
+	background: blue;
 }
 
 @header-font: 'Lobster', cursive;
@@ -94,6 +90,10 @@ header{			//<-----------opens header--------------->
 	left:50%;
 	transform:translate(-50%, -50%);
 	color:white;
+
+	@media(max-width:800px){
+		color:purple;
+
 	}
 	h1{
 		font-size: 100px;
@@ -102,11 +102,11 @@ header{			//<-----------opens header--------------->
 		font-size:50px;
 		.blueText();
 	}
+}
 }			//<----------------closes header----------------------->
 
-.main-content{
+.main-content{ //<--------opens main content---------------->
 	display: flex;
-	flex-direction: row;
 	position:relative;
 	text-align: center;
 
@@ -116,6 +116,7 @@ header{			//<-----------opens header--------------->
 	left:50%;
 	transform:translate(-35%, -55%);
 	color:white;
+
 	}
 
 	section{
@@ -141,6 +142,7 @@ header{			//<-----------opens header--------------->
 		top:82%;
 		left:85%;
 
+		
 		a{
 			display: flex;
 			flex-direction: column;
@@ -149,5 +151,4 @@ header{			//<-----------opens header--------------->
 
 		}
 	}
-}
-
+} 
